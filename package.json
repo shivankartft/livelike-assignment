@@ -1,0 +1,50 @@
+{
+  "name": "dynamics-365",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "prepare": "husky",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier . --write",
+    "generate:allure": "allure generate allure-results --clean",
+    "open:allure": "allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "1.44.1",
+    "@types/config": "^3.3.5",
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.7",
+    "prettier": "3.3.3",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@types/winston": "^2.4.4",
+    "allure-playwright": "^3.0.4",
+    "config": "^3.3.12",
+    "dotenv": "^16.4.5",
+    "otpauth": "^9.3.1",
+    "playwright": "1.44.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint"
+    ]
+  }
+}

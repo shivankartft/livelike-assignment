@@ -1,0 +1,17 @@
+{
+    "login":{
+        "email":"test@test112233.com",
+        "password": "test@123"
+    },
+    "userDetails":{
+        "name":"test",
+        "email":"test@ttest11.com",
+        "subject":"this is a test subject",
+        "message":"this is a test message",
+        "filePath":"src/testdata/car.png"
+    },
+    "successMessages":{
+        "contactUsPage" : "Success! Your details have been submitted successfully."
+    }
+
+}

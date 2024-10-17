@@ -1,0 +1,15 @@
+allure-report
+allure-results
+node_modules
+dynamics
+*/.vscode
+*.md
+.eslintrc.js
+.prettier-cache
+.eslintcache
+node_modules/
+test-results/
+playwright-report
+summary.json
+.github
+subModule
