@@ -1,4 +1,4 @@
-import { Page } from "@playwright/test";
+import { Page, test } from "@playwright/test";
 
 export class ProductsPage {
   page: Page;
@@ -14,22 +14,27 @@ export class ProductsPage {
   readonly addToCartButton = ".productinfo .add-to-cart";
 
   async navigateToProductsPage() {
-    await this.page.goto("/products");
+    await test.step(`Navigate to products page`, async () => {
+      await this.page.goto("/products");
+    });
   }
 
   async searchForAItem() {
-    await this.page.waitForTimeout(3000);
-    await this.page.locator(this.searchBox).fill("shirt");
-    await this.page.locator(this.searchButton).click();
+    await test.step(`Search for a item`, async () => {
+      await this.page.waitForTimeout(3000);
+      await this.page.locator(this.searchBox).fill("shirt");
+      await this.page.locator(this.searchButton).click();
+    });
   }
 
   async selectLastThirdSearchResult() {
-    await this.page.waitForTimeout(2000);
-    const searchResults = await this.page.locator(this.searchResults);
-    const searchResultSelect = searchResults.nth((await searchResults.count()) - 3);
-    await searchResultSelect.scrollIntoViewIfNeeded();
-    await searchResultSelect.hover();
-    console.log(searchResultSelect);
-    searchResultSelect.locator(this.addToCartButton).click();
+    await test.step(`Select last third item`, async () => {
+      await this.page.waitForTimeout(2000);
+      const searchResults = await this.page.locator(this.searchResults);
+      const searchResultSelect = searchResults.nth((await searchResults.count()) - 3);
+      await searchResultSelect.scrollIntoViewIfNeeded();
+      await searchResultSelect.hover();
+      searchResultSelect.locator(this.addToCartButton).click();
+    });
   }
 }

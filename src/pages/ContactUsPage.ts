@@ -1,4 +1,4 @@
-import { expect, Page } from "@playwright/test";
+import { expect, Page, test } from "@playwright/test";
 
 export class ContactUsPage {
   page: Page;
@@ -17,30 +17,33 @@ export class ContactUsPage {
   readonly successMessage = ".contact-form .alert-success";
 
   async clickOnContactUsPageButton() {
-    await this.page.goto("/");
-    await this.page.locator(this.contactUsLink).click();
+    await test.step(`Click on contact us page link`, async () => {
+      await this.page.goto("/");
+      await this.page.locator(this.contactUsLink).click();
+    });
   }
 
   async fillContactUsForm(name: string, email: string, subject: string, message: string, filePath: string) {
-    await this.page.waitForTimeout(3000);
-    await this.page.locator(this.contactUsNameTextBox).fill(name);
-    await this.page.locator(this.contactUsEmailTextBox).fill(email);
-    await this.page.locator(this.contactUsSubjectTextBox).fill(subject);
-    await this.page.locator(this.contactUsMessageTextBox).fill(message);
-    await this.page.setInputFiles(this.fileUploadButton, filePath);
+    await test.step(`Fill contact us form`, async () => {
+      await this.page.waitForTimeout(3000);
+      await this.page.locator(this.contactUsNameTextBox).fill(name);
+      await this.page.locator(this.contactUsEmailTextBox).fill(email);
+      await this.page.locator(this.contactUsSubjectTextBox).fill(subject);
+      await this.page.locator(this.contactUsMessageTextBox).fill(message);
+      await this.page.setInputFiles(this.fileUploadButton, filePath);
+    });
   }
 
   async clickOnSubmitButton() {
-    await this.page.locator(this.submitButton).click();
-    // this.page.on('dialog', async dialog => {
-    //   console.log('=============',dialog.defaultValue)
-    //   await dialog.accept(); // Accept the alert
-    // });
+    await test.step(`Click on submit button`, async () => {
+      await this.page.locator(this.submitButton).click();
+    });
   }
 
   async verifySuccessMessage(message: string) {
-    await this.page.waitForTimeout(1500000);
-    console.log("==========", await this.page.locator(this.successMessage).textContent());
-    expect(await this.page.locator(this.successMessage).textContent()).toBe(message);
+    await test.step(`Verify success message`, async () => {
+      await this.page.waitForTimeout(1500000);
+      expect(await this.page.locator(this.successMessage).textContent()).toBe(message);
+    });
   }
 }
