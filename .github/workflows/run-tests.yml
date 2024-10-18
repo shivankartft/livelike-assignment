@@ -19,6 +19,17 @@ jobs:
         yarn install
         yarn playwright install chromium
 
+    - name: Install Allure Command-Line Tool
+      run: |
+        # Install Java if it's not already installed
+        sudo apt-get update
+        sudo apt-get install -y openjdk-11-jre
+        # Download and set up Allure
+        wget -q https://github.com/allure-framework/allure2/releases/download/2.17.3/allure-2.17.3.tgz
+        tar -xzf allure-2.17.3.tgz
+        sudo mv allure-2.17.3 /opt/allure
+        echo 'export PATH=$PATH:/opt/allure/bin' >> $GITHUB_ENV
+
     - name: Run Tests
       run: yarn run test
       continue-on-error: true
