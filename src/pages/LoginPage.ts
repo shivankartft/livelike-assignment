@@ -12,7 +12,7 @@ export class Loginpage {
   readonly loginPasswordTextBox = 'form[action="/login"] input[type="password"]';
   readonly loginSubmitButton = 'form[action="/login"] button[type="submit"]';
   readonly logoutLink = '[href="/logout"]';
-  readonly invalidLoginMessage = 'form[action="/login"] p'
+  readonly invalidLoginMessage = 'form[action="/login"] p';
 
   async navigateToLoginPage() {
     await test.step(`Navigate to login page`, async () => {

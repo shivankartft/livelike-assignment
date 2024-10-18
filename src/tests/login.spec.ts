@@ -16,7 +16,6 @@ test.describe("Login", () => {
     logger.info("Successfully logged in");
   });
 
-
   test(`Invalid Login`, async ({ page, logger }) => {
     await page.loginPage.navigateToLoginPage();
     logger.info("Successfully navigated to login page");
