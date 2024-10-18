@@ -13,6 +13,6 @@ jobs:
 
     - name: Run Tests
       run: |
-        # Add your test commands here
         yarn install
-        yarn run
+        yarn playwright install
+        yarn run test
