@@ -64,7 +64,7 @@ jobs:
           server_port: 587
           username: bansal.shivankar@tftus.com
           password: ${{ secrets.GMAIL_PASSWORD }}
-          subject: "GitHub Actions: Build Notification"
+          subject: "GitHub Actions: Your Build Notification"
           to: bansal1995aug@gmail.com, asad.mohd@tftus.com
           from: no-reply@gmail.com
           body: |
