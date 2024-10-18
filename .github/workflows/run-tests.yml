@@ -60,11 +60,11 @@ jobs:
     - name: Upload Allure Report to GitHub Pages
       run: |
         mkdir -p gh-pages
-        cp -r path/to/allure-report/* gh-pages/
+        cp -r allure-report gh-pages/
         cd gh-pages
         git init
-        git config user.name "Your Name"
-        git config user.email "your_email@example.com"
+        git config user.name "${{github.actor}}"
+        git config user.email "${{github.actor}}@tftus.com"
         git add .
         git commit -m "Update Allure Report"
         git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
