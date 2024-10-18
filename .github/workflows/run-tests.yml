@@ -18,6 +18,11 @@ jobs:
       run: |
         yarn install
         yarn playwright install chromium
+    
+    - name: Install Java
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openjdk-11-jre
 
     - name: Install Allure Command-Line Tool
       run: |
@@ -29,6 +34,9 @@ jobs:
         tar -xzf allure-2.17.3.tgz
         sudo mv allure-2.17.3 /opt/allure
         echo 'export PATH=$PATH:/opt/allure/bin' >> $GITHUB_ENV
+
+    - name: Check Allure Version
+      run: allure --version 
 
     - name: Run Tests
       run: yarn run test
