@@ -1,7 +1,10 @@
 name: Run Tests
 
 on:
-  repository_dispatch:  # Listens for a dispatch event from the dev repo
+  workflow_dispatch:  # This allows the workflow to be triggered manually or via API
+  push:               # Optional: can also run on pushes
+    branches:
+      - master
 
 jobs:
   run-tests:
