@@ -18,3 +18,22 @@ jobs:
 
     - name: Run Tests
       run: yarn run test
+
+    - name: Generate Allure Report
+      run: |
+        allure generate allure-results --clean -o allure-report
+
+    - name: Upload Allure Report
+      uses: actions/upload-artifact@v2
+      with:
+        name: allure-report
+        path: allure-report
+    
+    - name: Trigger Repository B Workflow
+      run: |
+        curl -X POST \
+        -H "Authorization: token ${{ secrets.PAT }}" \
+        -H "Accept: application/vnd.github.everest-preview+json" \
+        https://api.github.com/repos/shivankartft/react-redux-realworld-example-app/actions/workflows/run-report.yml/dispatches \
+        -d '{"ref":"main"}'
+
