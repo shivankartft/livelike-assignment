@@ -1,7 +1,7 @@
 name: Run Tests
 
 on:
-  workflow_dispatch:  # Listens for repository_dispatch event from the dev repo
+  repository_dispatch:  # Listens for a dispatch event from the dev repo
 
 jobs:
   run-tests:
@@ -11,8 +11,10 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v2
 
-    - name: Run Tests
+    - name: Install Dependencies
       run: |
         yarn install
         yarn playwright install
-        yarn run test
+
+    - name: Run Tests
+      run: yarn run test
