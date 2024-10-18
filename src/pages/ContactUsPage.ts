@@ -42,7 +42,6 @@ export class ContactUsPage {
 
   async verifySuccessMessage(message: string) {
     await test.step(`Verify success message`, async () => {
-      await this.page.waitForTimeout(1500000);
       expect(await this.page.locator(this.successMessage).textContent()).toBe(message);
     });
   }
