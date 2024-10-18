@@ -68,4 +68,4 @@ jobs:
         git config user.email "${{github.actor}}@tftus.com"
         git add .
         git commit -m "Update Allure Report"
-        git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
+        git push --force "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
