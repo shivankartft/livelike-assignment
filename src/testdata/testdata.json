@@ -1,7 +1,13 @@
 {
   "login": {
+    "valid":{
     "email": "test@test112233.com",
     "password": "test@123"
+    },
+    "invalid":{
+    "email": "test@test1122332211.com",
+    "password": "test@1234533"
+    }
   },
   "userDetails": {
     "name": "test",

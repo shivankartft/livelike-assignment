@@ -12,6 +12,7 @@ export class Loginpage {
   readonly loginPasswordTextBox = 'form[action="/login"] input[type="password"]';
   readonly loginSubmitButton = 'form[action="/login"] button[type="submit"]';
   readonly logoutLink = '[href="/logout"]';
+  readonly invalidLoginMessage = 'form[action="/login"] p'
 
   async navigateToLoginPage() {
     await test.step(`Navigate to login page`, async () => {
@@ -38,6 +39,14 @@ export class Loginpage {
   async verifySuccessfullLogin() {
     await test.step(`Verifu successfull login`, async () => {
       const logoutLink = await this.page.locator(this.logoutLink);
+      await logoutLink.waitFor({ state: "visible" });
+      expect(await logoutLink.isVisible()).toBeTruthy;
+    });
+  }
+
+  async verifyInvalidLogin() {
+    await test.step(`Verify invalid login`, async () => {
+      const logoutLink = await this.page.locator(this.invalidLoginMessage);
       await logoutLink.waitFor({ state: "visible" });
       expect(await logoutLink.isVisible()).toBeTruthy;
     });
