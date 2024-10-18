@@ -9,66 +9,69 @@ on:
 jobs:
   run-tests:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v2
+      - name: Set dynamic name based on commit message
+        id: set_name
+        run: echo "name=$(echo '${{ github.event.head_commit.message }}' | sed 's/[^a-zA-Z0-9 ]//g')" >> $GITHUB_ENV
 
-    - name: Install Dependencies
-      run: |
-        yarn install
-        yarn playwright install chromium
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-    - name: Install Allure Command-Line Tool
-      run: |
-        # Install Java if it's not already installed
-        sudo apt-get update
-        sudo apt-get install -y openjdk-11-jre
-        # Download and set up Allure
-        wget -q https://github.com/allure-framework/allure2/releases/download/2.17.3/allure-2.17.3.tgz
-        tar -xzf allure-2.17.3.tgz
-        sudo mv allure-2.17.3 /opt/allure
-        echo 'export PATH=$PATH:/opt/allure/bin' >> $GITHUB_ENV
-        echo "/opt/allure/bin" >> $GITHUB_PATH
+      - name: Install Dependencies
+        run: |
+          yarn install
+          yarn playwright install chromium
 
-    - name: Run Tests
-      run: yarn run test
-      continue-on-error: true
+      - name: Install Allure Command-Line Tool
+        run: |
+          # Install Java if it's not already installed
+          sudo apt-get update
+          sudo apt-get install -y openjdk-11-jre
+          # Download and set up Allure
+          wget -q https://github.com/allure-framework/allure2/releases/download/2.17.3/allure-2.17.3.tgz
+          tar -xzf allure-2.17.3.tgz
+          sudo mv allure-2.17.3 /opt/allure
+          echo 'export PATH=$PATH:/opt/allure/bin' >> $GITHUB_ENV
+          echo "/opt/allure/bin" >> $GITHUB_PATH
 
-    - name: Generate Allure Report
-      run: allure generate allure-results --clean -o allure-report
+      - name: Run Tests
+        run: yarn run test
+        continue-on-error: true
 
-    - name: Upload Allure Report
-      uses: actions/upload-artifact@v3
-      with:
-        name: allure-report
-        path: allure-report/
+      - name: Generate Allure Report
+        run: allure generate allure-results --clean -o allure-report
 
-    - name: Upload Allure Report to GitHub Pages
-      run: |
-        mkdir -p gh-pages
-        cp -r allure-report/* gh-pages/
-        cd gh-pages
-        git init
-        git checkout -b gh-pages
-        git config user.name "${{github.actor}}"
-        git config user.email "${{github.actor}}@tftus.com"
-        git add .
-        git commit -m "Update Allure Report"
-        git push --force "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure-report
+          path: allure-report/
 
-    - name: Send Email via Gmail
-      uses: dawidd6/action-send-mail@v3
-      with:
+      - name: Upload Allure Report to GitHub Pages
+        run: |
+          mkdir -p gh-pages
+          cp -r allure-report/* gh-pages/
+          cd gh-pages
+          git init
+          git checkout -b gh-pages
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@tftus.com"
+          git add .
+          git commit -m "Update Allure Report"
+          git push --force "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
+
+      - name: Send Email via Gmail
+        uses: dawidd6/action-send-mail@v3
+        with:
           server_address: smtp.gmail.com
           server_port: 587
           username: bansal.shivankar@tftus.com
           password: ${{ secrets.GMAIL_PASSWORD }}
-          subject: "GitHub Actions: Build Notification"
+          subject: "GitHub Actions: Build Notification for ${{ github.event.head_commit.message }}"
           to: bansal1995aug@gmail.com, asad.mohd@tftus.com
           from: no-reply@gmail.com
           body: |
-            Hi 
+            Hi,
             
-            Please find the attached report for build made 
-            https://shivankartft.github.io/livelike-assignment/index.html
+            Please find the attached report for the build ${{ github.event.head_commit.message }}
+            at: https://shivankartft.github.io/livelike-assignment/index.html
