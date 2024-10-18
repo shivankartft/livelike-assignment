@@ -34,12 +34,7 @@ jobs:
         tar -xzf allure-2.17.3.tgz
         sudo mv allure-2.17.3 /opt/allure
         echo 'export PATH=$PATH:/opt/allure/bin' >> $GITHUB_ENV
-    
-    - name: Add Allure to PATH
-      run: echo "/opt/allure/bin" >> $GITHUB_PATH
-
-    - name: Check Allure Version
-      run: allure --version
+        echo "/opt/allure/bin" >> $GITHUB_PATH
 
     - name: Run Tests
       run: yarn run test
