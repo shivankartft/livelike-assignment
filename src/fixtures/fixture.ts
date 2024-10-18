@@ -18,10 +18,10 @@ const test = base.extend<{ page: ExtendedPage; logger: CustomLogger }>({
 
   // Define the page fixture with logger integration
   page: async ({ logger }, use, testInfo) => {
-  const browserOptions = { headless: true };
-  const browser = await await chromium.launch(browserOptions);
-  const context = await browser.newContext();
-  const page = await context.newPage();
+    const browserOptions = { headless: true };
+    const browser = await await chromium.launch(browserOptions);
+    const context = await browser.newContext();
+    const page = await context.newPage();
     const basePage = new BasePage(page);
 
     // Use logger to log test actions

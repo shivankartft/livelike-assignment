@@ -3,12 +3,11 @@ import { Loginpage } from "src/pages/LoginPage";
 import { ContactUsPage } from "src/pages/ContactUsPage";
 import { ProductsPage } from "./ProductsPage";
 
-
 declare module "@playwright/test" {
   interface Page {
     loginPage: Loginpage;
     contactUsPage: ContactUsPage;
-    productsPage: ProductsPage
+    productsPage: ProductsPage;
   }
 }
 

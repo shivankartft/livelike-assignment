@@ -7,21 +7,21 @@ export class ContactUsPage {
     this.page = page;
   }
 
-  readonly contactUsLink = 'a[href="/contact_us"]'
-  readonly contactUsNameTextBox = '#contact-us-form input[name="name"]'
-  readonly contactUsEmailTextBox = '#contact-us-form input[type="email"]'
-  readonly contactUsSubjectTextBox = '#contact-us-form input[name="subject"]'
-  readonly contactUsMessageTextBox = '#message'
-  readonly submitButton = 'input[type="submit"]'
-  readonly fileUploadButton = 'input[type="file"]'
-  readonly successMessage = '.contact-form .alert-success'
+  readonly contactUsLink = 'a[href="/contact_us"]';
+  readonly contactUsNameTextBox = '#contact-us-form input[name="name"]';
+  readonly contactUsEmailTextBox = '#contact-us-form input[type="email"]';
+  readonly contactUsSubjectTextBox = '#contact-us-form input[name="subject"]';
+  readonly contactUsMessageTextBox = "#message";
+  readonly submitButton = 'input[type="submit"]';
+  readonly fileUploadButton = 'input[type="file"]';
+  readonly successMessage = ".contact-form .alert-success";
 
   async clickOnContactUsPageButton() {
-    await this.page.goto('/')
-    await this.page.locator(this.contactUsLink).click()
+    await this.page.goto("/");
+    await this.page.locator(this.contactUsLink).click();
   }
 
-  async fillContactUsForm(name: string, email:string, subject:string, message:string, filePath:string) {
+  async fillContactUsForm(name: string, email: string, subject: string, message: string, filePath: string) {
     await this.page.waitForTimeout(3000);
     await this.page.locator(this.contactUsNameTextBox).fill(name);
     await this.page.locator(this.contactUsEmailTextBox).fill(email);
@@ -38,9 +38,9 @@ export class ContactUsPage {
     // });
   }
 
-  async verifySuccessMessage(message:string){
-    await this.page.waitForTimeout(1500000)
-    console.log('==========',await this.page.locator(this.successMessage).textContent())
-    expect(await this.page.locator(this.successMessage).textContent()).toBe(message)
+  async verifySuccessMessage(message: string) {
+    await this.page.waitForTimeout(1500000);
+    console.log("==========", await this.page.locator(this.successMessage).textContent());
+    expect(await this.page.locator(this.successMessage).textContent()).toBe(message);
   }
 }

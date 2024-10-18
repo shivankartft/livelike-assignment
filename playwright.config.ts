@@ -13,9 +13,9 @@ export default defineConfig({
   workers: process.env.CI ? 1 : 7,
   reporter: "allure-playwright",
   use: {
-    baseURL: 'https://automationexercise.com',
+    baseURL: "https://automationexercise.com",
     headless: false,
     trace: "retain-on-failure",
     video: "retain-on-failure",
-  }
+  },
 });

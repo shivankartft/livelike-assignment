@@ -7,14 +7,14 @@ export class Loginpage {
     this.page = page;
   }
 
-  readonly loginButton = 'a[href="/login"]'
-  readonly loginEmailTextBox = 'form[action="/login"] input[type="email"]'
-  readonly loginPasswordTextBox = 'form[action="/login"] input[type="password"]'
-  readonly loginSubmitButton = 'form[action="/login"] button[type="submit"]'
-  readonly logoutLink = '[href="/logout"]'
+  readonly loginButton = 'a[href="/login"]';
+  readonly loginEmailTextBox = 'form[action="/login"] input[type="email"]';
+  readonly loginPasswordTextBox = 'form[action="/login"] input[type="password"]';
+  readonly loginSubmitButton = 'form[action="/login"] button[type="submit"]';
+  readonly logoutLink = '[href="/logout"]';
 
   async navigateToLoginPage() {
-    await this.page.goto('/login');
+    await this.page.goto("/login");
   }
 
   async clickOnLoginButton() {
@@ -29,9 +29,9 @@ export class Loginpage {
     await this.page.locator(this.loginSubmitButton).click();
   }
 
-  async verifySuccessfullLogin(){
+  async verifySuccessfullLogin() {
     const logoutLink = await this.page.locator(this.logoutLink);
-    await logoutLink.waitFor({ state: 'visible' });
-    expect(await logoutLink.isVisible()).toBeTruthy
+    await logoutLink.waitFor({ state: "visible" });
+    expect(await logoutLink.isVisible()).toBeTruthy;
   }
 }
