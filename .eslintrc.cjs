@@ -22,5 +22,7 @@ module.exports = {
         message: "We don't want to leave .only on our tests😱",
       },
     ],
+    "require-jsdoc": "warn",
+    "valid-jsdoc": "warn"
   },
 };

@@ -6,16 +6,10 @@ test.describe("Contact us form filling", () => {
     await page.contactUsPage.clickOnContactUsPageButton();
     logger.info("Successfully clicked on contact us page");
 
-    await page.contactUsPage.fillContactUsForm(
-      userDetails.name,
-      userDetails.email,
-      userDetails.subject,
-      userDetails.message,
-      userDetails.filePath
-    );
+    await page.contactUsPage.fillContactUsForm(userDetails);
     logger.info("Successfully filled contact us form");
 
-    await page.contactUsPage.clickOnSubmitButton();
+    await page.contactUsPage.submitButton.click();
     logger.info("Successfully clicked on submit button");
 
     await page.contactUsPage.verifySuccessMessage(successMessages.contactUsPage);

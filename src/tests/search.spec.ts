@@ -5,10 +5,10 @@ test.describe("Search for a product and select last third result", () => {
     await page.productsPage.navigateToProductsPage();
     logger.info("Successfully navigated to products page");
 
-    await page.productsPage.searchForAItem();
+    await page.productsPage.searchForAItem('shirt');
     logger.info("Successfully search for shirt");
 
-    await page.productsPage.selectLastThirdSearchResult();
+    await page.productsPage.selectLastNthSearchResult(3);
     logger.info("Successfully added the third item to cart");
   });
 });

@@ -20,6 +20,8 @@ To run the test use the following command
   yarn run test
 ```
 
+To run the tests in headed mode please change to value of HEADLESS_MODE variable in .env file to true byh default it is set to run the tests in headless mode.
+
 Once the test execution is completed you can generate allure-reports on your local system using the following command
 ```bash
   yarn run generate:allure

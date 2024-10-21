@@ -1,8 +1,11 @@
 import { test as base, chromium, Page, TestInfo } from "@playwright/test";
 import { BasePage } from "src/pages/BasePage";
 import CustomLogger from "../../logger";
+import dotenv from "dotenv";
 import path from "path";
 import fs from "fs";
+
+dotenv.config({ path: path.resolve(".env") });
 const environment = (process.env.EXECUTION_ENV || "local").toLowerCase();
 
 type ExtendedPage = BasePage["page"];
@@ -18,8 +21,8 @@ const test = base.extend<{ page: ExtendedPage; logger: CustomLogger }>({
 
   // Define the page fixture with logger integration
   page: async ({ logger }, use, testInfo) => {
-    const browserOptions = { headless: true };
-    const browser = await await chromium.launch(browserOptions);
+    const browserOptions = { headless: process.env.HEADLESS_MODE === 'true'};
+    const browser = await chromium.launch(browserOptions);
     const context = await browser.newContext();
     const page = await context.newPage();
     const basePage = new BasePage(page);
@@ -63,6 +66,14 @@ const test = base.extend<{ page: ExtendedPage; logger: CustomLogger }>({
   },
 });
 
+/**
+ * Attahced the video to allure report if test fails
+ *
+ * @async
+ * @param {TestInfo} testInfo - test info object
+ * @param {Page} page - page object
+ * @returns {void}
+ */
 async function attachVideo(testInfo: TestInfo, page: Page) {
   const video = await page.video()?.path(); // Get video file path
   if (video) {
@@ -73,6 +84,13 @@ async function attachVideo(testInfo: TestInfo, page: Page) {
   }
 }
 
+/**
+ * Attaches screenshot to allure report if test fails
+ * @async
+ * @param {TestInfo} testInfo - test info object
+ * @param {Page} page - page object
+ * @returns {void}
+ */
 async function attachScreenshot(testInfo: TestInfo, page: Page) {
   const screenshot = await page.screenshot();
   await testInfo.attach("Screenshot", {

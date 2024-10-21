@@ -65,7 +65,7 @@ jobs:
           username: bansal.shivankar@tftus.com
           password: ${{ secrets.GMAIL_PASSWORD }}
           subject: "GitHub Actions: Your Build Notification"
-          to: bansal1995aug@gmail.com, asad.mohd@tftus.com
+          to: bansal1995aug@gmail.com
           from: no-reply@gmail.com
           body: |
             Hi,
