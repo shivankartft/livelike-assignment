@@ -21,7 +21,7 @@ const test = base.extend<{ page: ExtendedPage; logger: CustomLogger }>({
 
   // Define the page fixture with logger integration
   page: async ({ logger }, use, testInfo) => {
-    const browserOptions = { headless: process.env.HEADLESS_MODE === 'true'};
+    const browserOptions = { headless: process.env.HEADLESS_MODE === "true" };
     const browser = await chromium.launch(browserOptions);
     const context = await browser.newContext();
     const page = await context.newPage();

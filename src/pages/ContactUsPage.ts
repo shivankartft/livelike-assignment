@@ -11,7 +11,6 @@ export class ContactUsPage {
   fileUploadButton: Locator;
   successMessage: Locator;
 
-
   constructor(page: Page) {
     this.page = page;
     this.contactUsLink = this.page.locator('a[href="/contact_us"]');
@@ -37,22 +36,28 @@ export class ContactUsPage {
   }
 
   /**
- * @typedef {Object} FormData
- * @property {string} name - The name of the user.
- * @property {string} email - The email of the user.
- * @property {string} subject - The subject of the message.
- * @property {string} message - The message content.
- * @property {string} filePath - The file path if an attachment is included.
- */
+   * @typedef {Object} FormData
+   * @property {string} name - The name of the user.
+   * @property {string} email - The email of the user.
+   * @property {string} subject - The subject of the message.
+   * @property {string} message - The message content.
+   * @property {string} filePath - The file path if an attachment is included.
+   */
 
-/**
- * Fills the contact us page form.
- *
- * @async
- * @param {FormData} formData - User details for contact us form.
- * @returns {void}
- */
-  async fillContactUsForm(formData: { name: string; email: string; subject: string; message: string; filePath: string; }) {
+  /**
+   * Fills the contact us page form.
+   *
+   * @async
+   * @param {FormData} formData - User details for contact us form.
+   * @returns {void}
+   */
+  async fillContactUsForm(formData: {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+    filePath: string;
+  }) {
     await test.step(`Fill contact us form`, async () => {
       await this.contactUsNameTextBox.waitFor({ state: "visible" });
       await this.contactUsNameTextBox.fill(formData.name);

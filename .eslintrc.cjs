@@ -23,6 +23,6 @@ module.exports = {
       },
     ],
     "require-jsdoc": "warn",
-    "valid-jsdoc": "warn"
+    "valid-jsdoc": "warn",
   },
 };
