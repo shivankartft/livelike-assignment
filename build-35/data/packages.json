@@ -1,0 +1,85 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "form.spec.ts",
+    "children" : [ {
+      "name" : "Contact us form filling",
+      "uid" : "1c9f75cdc5afce0b",
+      "parentUid" : "57705dc06f5aa5743ef8a79b2210a684",
+      "status" : "failed",
+      "time" : {
+        "start" : 1734598022414,
+        "stop" : 1734598025282,
+        "duration" : 2868
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "form.spec.ts"
+  }, {
+    "name" : "login.spec.ts",
+    "children" : [ {
+      "name" : "Login",
+      "uid" : "261cd7964dd2fb",
+      "parentUid" : "9a4c0266cb8df6cd22c2dafd030bb458",
+      "status" : "passed",
+      "time" : {
+        "start" : 1734598026078,
+        "stop" : 1734598028278,
+        "duration" : 2200
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Invalid Login",
+      "uid" : "fd2e4dd85677c86f",
+      "parentUid" : "9a4c0266cb8df6cd22c2dafd030bb458",
+      "status" : "passed",
+      "time" : {
+        "start" : 1734598028288,
+        "stop" : 1734598030239,
+        "duration" : 1951
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "login.spec.ts"
+  }, {
+    "name" : "search.spec.ts",
+    "children" : [ {
+      "name" : "Search for a product and select last third result",
+      "uid" : "26b32d99cf12ef89",
+      "parentUid" : "e0cec8808329f28c292a93e94dfdfa68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1734598030245,
+        "stop" : 1734598032678,
+        "duration" : 2433
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "search.spec.ts"
+  } ]
+}
