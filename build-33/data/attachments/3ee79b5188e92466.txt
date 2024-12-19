@@ -1,4 +1,0 @@
-2024-12-19 08:35:55 [INFO]: Starting test: Login
-2024-12-19 08:35:56 [INFO]: Successfully navigated to login page
-2024-12-19 08:35:57 [INFO]: Successfully entered user details and clicked on submit button
-2024-12-19 08:35:57 [INFO]: Successfully logged in
