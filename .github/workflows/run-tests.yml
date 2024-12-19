@@ -57,6 +57,12 @@ jobs:
           git add .
           git commit -m "Update Allure Report"
           git push --force "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
+          
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PAT }}
+          publish_dir: gh-pages
 
       - name: Send Email via Gmail
         uses: dawidd6/action-send-mail@v3
