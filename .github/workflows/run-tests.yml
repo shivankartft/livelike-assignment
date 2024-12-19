@@ -49,14 +49,14 @@ jobs:
           mkdir -p gh-pages
           mkdir -p gh-pages/build-${{ github.run_number }}
           cp -r allure-report/* gh-pages/build-${{ github.run_number }}
-          cd gh-pages
-          git init
-          git checkout -b gh-pages
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@tftus.com"
-          git add .
-          git commit -m "Update Allure Report"
-          git push --force "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
+          #cd gh-pages
+          #git init
+          #git checkout -b gh-pages
+          #git config user.name "${{ github.actor }}"
+          #git config user.email "${{ github.actor }}@tftus.com"
+          #git add .
+          #git commit -m "Update Allure Report"
+          #git push --force "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
           
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
