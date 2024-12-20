@@ -1,5 +1,0 @@
-2024-12-20 06:52:36 [INFO]: Starting test: Contact us form filling
-2024-12-20 06:52:37 [INFO]: Successfully clicked on contact us page
-2024-12-20 06:52:37 [INFO]: Successfully filled contact us form
-2024-12-20 06:52:37 [INFO]: Successfully clicked on submit button
-2024-12-20 06:52:37 [ERROR]: Test "Contact us form filling" failed or was interrupted.

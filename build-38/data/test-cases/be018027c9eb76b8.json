@@ -1,0 +1,427 @@
+{
+  "uid" : "be018027c9eb76b8",
+  "name" : "Search for a product and select last third result",
+  "fullName" : "search.spec.ts:4:7",
+  "historyId" : "9b45d67e2f789361dad8fc08374ca172:d41d8cd98f00b204e9800998ecf8427e",
+  "time" : {
+    "start" : 1734677675796,
+    "stop" : 1734677678308,
+    "duration" : 2512
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1734677675796,
+        "stop" : 1734677676186,
+        "duration" : 390
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture: logger",
+        "time" : {
+          "start" : 1734677675797,
+          "stop" : 1734677675798,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "fixture: page",
+        "time" : {
+          "start" : 1734677675798,
+          "stop" : 1734677676186,
+          "duration" : 388
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "browserType.launch",
+          "time" : {
+            "start" : 1734677675798,
+            "stop" : 1734677675874,
+            "duration" : 76
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "browser.newContext",
+          "time" : {
+            "start" : 1734677675874,
+            "stop" : 1734677675879,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "browserContext.newPage",
+          "time" : {
+            "start" : 1734677675881,
+            "stop" : 1734677676185,
+            "duration" : 304
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 3,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Navigate to products page",
+      "time" : {
+        "start" : 1734677676186,
+        "stop" : 1734677677086,
+        "duration" : 900
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "page.goto(/products)",
+        "time" : {
+          "start" : 1734677676187,
+          "stop" : 1734677677086,
+          "duration" : 899
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Search for a item",
+      "time" : {
+        "start" : 1734677677086,
+        "stop" : 1734677677474,
+        "duration" : 388
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.waitFor(#advertisement #search_product)",
+        "time" : {
+          "start" : 1734677677087,
+          "stop" : 1734677677119,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.fill(#advertisement #search_product)",
+        "time" : {
+          "start" : 1734677677120,
+          "stop" : 1734677677154,
+          "duration" : 34
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.click(#advertisement #submit_search)",
+        "time" : {
+          "start" : 1734677677154,
+          "stop" : 1734677677473,
+          "duration" : 319
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Select last third item",
+      "time" : {
+        "start" : 1734677677474,
+        "stop" : 1734677678018,
+        "duration" : 544
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.count(.features_items > div:not([id=\"cartModal\"]))",
+        "time" : {
+          "start" : 1734677677475,
+          "stop" : 1734677677553,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.scrollIntoViewIfNeeded(.features_items > div:not([id=\"cartModal\"]) >> nth=10)",
+        "time" : {
+          "start" : 1734677677554,
+          "stop" : 1734677677604,
+          "duration" : 50
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.hover(.features_items > div:not([id=\"cartModal\"]) >> nth=10)",
+        "time" : {
+          "start" : 1734677677605,
+          "stop" : 1734677677799,
+          "duration" : 194
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.click(.features_items > div:not([id=\"cartModal\"]) >> nth=10 >> internal:chain=\".productinfo .add-to-cart\")",
+        "time" : {
+          "start" : 1734677677800,
+          "stop" : 1734677678018,
+          "duration" : 218
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1734677678019,
+        "stop" : 1734677678311,
+        "duration" : 292
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture: page",
+        "time" : {
+          "start" : 1734677678020,
+          "stop" : 1734677678310,
+          "duration" : 290
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "browserContext.close",
+          "time" : {
+            "start" : 1734677678271,
+            "stop" : 1734677678283,
+            "duration" : 12
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "browser.close",
+          "time" : {
+            "start" : 1734677678283,
+            "stop" : 1734677678310,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "logs/search.spec.log",
+          "time" : {
+            "start" : 1734677678313,
+            "stop" : 1734677678313,
+            "duration" : 0
+          },
+          "status" : "unknown",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "69bb7f0b5b619cfc",
+            "name" : "logs/search.spec.log",
+            "source" : "69bb7f0b5b619cfc.txt",
+            "type" : "text/plain",
+            "size" : 289
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 3,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "fixture: logger",
+        "time" : {
+          "start" : 1734677678310,
+          "stop" : 1734677678311,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "b49079e1d1993661",
+      "name" : "stdout",
+      "source" : "b49079e1d1993661.txt",
+      "type" : "text/plain",
+      "size" : 382
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 23,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "framework",
+    "value" : "playwright"
+  }, {
+    "name" : "package",
+    "value" : "search.spec.ts"
+  }, {
+    "name" : "titlePath",
+    "value" : " >  > search.spec.ts > Search for a product and select last third result"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1680-128"
+  }, {
+    "name" : "thread",
+    "value" : "pid-3364-worker-0"
+  }, {
+    "name" : "suite",
+    "value" : "search.spec.ts"
+  }, {
+    "name" : "subSuite",
+    "value" : "Search for a product and select last third result"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "be018027c9eb76b8.json",
+  "parameterValues" : [ ]
+}
