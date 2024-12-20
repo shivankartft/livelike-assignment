@@ -2,18 +2,18 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "fv-az1909-121",
+    "name" : "fv-az1267-750",
     "children" : [ {
-      "name" : "pid-3403-worker-0",
+      "name" : "pid-3384-worker-0",
       "children" : [ {
         "name" : "Login",
-        "uid" : "604ed40bf5a218e",
-        "parentUid" : "0aa1c2be0c8f1c9f0edc79b7e4b1ddc5",
+        "uid" : "d0374e17f33af2c7",
+        "parentUid" : "9a46d075565a44a1123737f7bf26debb",
         "status" : "passed",
         "time" : {
-          "start" : 1734677449754,
-          "stop" : 1734677451885,
-          "duration" : 2131
+          "start" : 1734677559182,
+          "stop" : 1734677561976,
+          "duration" : 2794
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,13 +24,13 @@
         "parameters" : [ ]
       }, {
         "name" : "Invalid Login",
-        "uid" : "36aaa13786dfa2d5",
-        "parentUid" : "0aa1c2be0c8f1c9f0edc79b7e4b1ddc5",
+        "uid" : "cf210c362c080e32",
+        "parentUid" : "9a46d075565a44a1123737f7bf26debb",
         "status" : "passed",
         "time" : {
-          "start" : 1734677451895,
-          "stop" : 1734677453510,
-          "duration" : 1615
+          "start" : 1734677561986,
+          "stop" : 1734677563663,
+          "duration" : 1677
         },
         "flaky" : false,
         "newFailed" : false,
@@ -41,13 +41,13 @@
         "parameters" : [ ]
       }, {
         "name" : "Search for a product and select last third result",
-        "uid" : "bfee35ed9a547952",
-        "parentUid" : "0aa1c2be0c8f1c9f0edc79b7e4b1ddc5",
+        "uid" : "9154fecb9fef5eef",
+        "parentUid" : "9a46d075565a44a1123737f7bf26debb",
         "status" : "passed",
         "time" : {
-          "start" : 1734677453516,
-          "stop" : 1734677456164,
-          "duration" : 2648
+          "start" : 1734677563669,
+          "stop" : 1734677565965,
+          "duration" : 2296
         },
         "flaky" : false,
         "newFailed" : false,
@@ -58,13 +58,13 @@
         "parameters" : [ ]
       }, {
         "name" : "Contact us form filling",
-        "uid" : "82f786b95ebd00ca",
-        "parentUid" : "0aa1c2be0c8f1c9f0edc79b7e4b1ddc5",
+        "uid" : "84fc7a66bcd4b7c8",
+        "parentUid" : "9a46d075565a44a1123737f7bf26debb",
         "status" : "failed",
         "time" : {
-          "start" : 1734677445898,
-          "stop" : 1734677448940,
-          "duration" : 3042
+          "start" : 1734677556131,
+          "stop" : 1734677558447,
+          "duration" : 2316
         },
         "flaky" : false,
         "newFailed" : false,
@@ -74,8 +74,8 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "0aa1c2be0c8f1c9f0edc79b7e4b1ddc5"
+      "uid" : "9a46d075565a44a1123737f7bf26debb"
     } ],
-    "uid" : "d070bb7ca9fa34c35d8ad6928f4a2546"
+    "uid" : "fbae98a595f6dc9741db81ba714d8f41"
   } ]
 }

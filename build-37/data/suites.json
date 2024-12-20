@@ -7,13 +7,13 @@
       "name" : "Contact us form filling",
       "children" : [ {
         "name" : "Contact us form filling",
-        "uid" : "82f786b95ebd00ca",
+        "uid" : "84fc7a66bcd4b7c8",
         "parentUid" : "baaa7da599b6e22151865d9588a7b106",
         "status" : "failed",
         "time" : {
-          "start" : 1734677445898,
-          "stop" : 1734677448940,
-          "duration" : 3042
+          "start" : 1734677556131,
+          "stop" : 1734677558447,
+          "duration" : 2316
         },
         "flaky" : false,
         "newFailed" : false,
@@ -32,13 +32,13 @@
       "name" : "Login",
       "children" : [ {
         "name" : "Login",
-        "uid" : "604ed40bf5a218e",
+        "uid" : "d0374e17f33af2c7",
         "parentUid" : "c521efed5c43b85810d26991e3eff68d",
         "status" : "passed",
         "time" : {
-          "start" : 1734677449754,
-          "stop" : 1734677451885,
-          "duration" : 2131
+          "start" : 1734677559182,
+          "stop" : 1734677561976,
+          "duration" : 2794
         },
         "flaky" : false,
         "newFailed" : false,
@@ -49,13 +49,13 @@
         "parameters" : [ ]
       }, {
         "name" : "Invalid Login",
-        "uid" : "36aaa13786dfa2d5",
+        "uid" : "cf210c362c080e32",
         "parentUid" : "c521efed5c43b85810d26991e3eff68d",
         "status" : "passed",
         "time" : {
-          "start" : 1734677451895,
-          "stop" : 1734677453510,
-          "duration" : 1615
+          "start" : 1734677561986,
+          "stop" : 1734677563663,
+          "duration" : 1677
         },
         "flaky" : false,
         "newFailed" : false,
@@ -74,13 +74,13 @@
       "name" : "Search for a product and select last third result",
       "children" : [ {
         "name" : "Search for a product and select last third result",
-        "uid" : "bfee35ed9a547952",
+        "uid" : "9154fecb9fef5eef",
         "parentUid" : "d30635b1fa4128092f4c17d04deac5fc",
         "status" : "passed",
         "time" : {
-          "start" : 1734677453516,
-          "stop" : 1734677456164,
-          "duration" : 2648
+          "start" : 1734677563669,
+          "stop" : 1734677565965,
+          "duration" : 2296
         },
         "flaky" : false,
         "newFailed" : false,
