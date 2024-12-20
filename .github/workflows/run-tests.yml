@@ -62,6 +62,7 @@ jobs:
         with:
           github_token: ${{ secrets.PAT }}
           publish_dir: gh-pages
+          keep_files: true
 
       - name: Send Email via Gmail
         uses: dawidd6/action-send-mail@v3
