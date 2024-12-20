@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c8adde2eb94348",
+      "uid" : "1019624b50136390",
       "status" : "failed",
-      "statusDetails" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 41585, Symbol(trigger_async_id_symbol): 36962, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1734678450335}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1734678450337}], \"title\": \"Verify success message\", \"wallTime\": 1734678450334}, \"previous\": undefined, \"type\": \"stepZone\"}}",
+      "statusDetails" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 41288, Symbol(trigger_async_id_symbol): 35876, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1734678571984}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1734678571987}], \"title\": \"Verify success message\", \"wallTime\": 1734678571982}, \"previous\": undefined, \"type\": \"stepZone\"}}",
       "time" : {
-        "start" : 1734678448338,
-        "stop" : 1734678450812,
-        "duration" : 2474
+        "start" : 1734678569742,
+        "stop" : 1734678572434,
+        "duration" : 2692
       }
     } ]
   },
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "efda43731fd47c75",
+      "uid" : "48840807b62dad80",
       "status" : "passed",
       "time" : {
-        "start" : 1734678456288,
-        "stop" : 1734678458637,
-        "duration" : 2349
+        "start" : 1734678576692,
+        "stop" : 1734678578658,
+        "duration" : 1966
       }
     } ]
   },
@@ -48,12 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2edb54c94409b419",
+      "uid" : "ed3c317f7f61d232",
       "status" : "passed",
       "time" : {
-        "start" : 1734678451567,
-        "stop" : 1734678454437,
-        "duration" : 2870
+        "start" : 1734678573210,
+        "stop" : 1734678575423,
+        "duration" : 2213
       }
     } ]
   },
@@ -67,12 +67,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a88b6214de5167bf",
+      "uid" : "7026557ed1e55d68",
       "status" : "passed",
       "time" : {
-        "start" : 1734678454447,
-        "stop" : 1734678456283,
-        "duration" : 1836
+        "start" : 1734678575433,
+        "stop" : 1734678576687,
+        "duration" : 1254
       }
     } ]
   }

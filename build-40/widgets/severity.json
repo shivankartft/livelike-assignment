@@ -1,40 +1,40 @@
 [ {
-  "uid" : "2edb54c94409b419",
-  "name" : "Login",
-  "time" : {
-    "start" : 1734678451567,
-    "stop" : 1734678454437,
-    "duration" : 2870
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c8adde2eb94348",
+  "uid" : "1019624b50136390",
   "name" : "Contact us form filling",
   "time" : {
-    "start" : 1734678448338,
-    "stop" : 1734678450812,
-    "duration" : 2474
+    "start" : 1734678569742,
+    "stop" : 1734678572434,
+    "duration" : 2692
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "efda43731fd47c75",
+  "uid" : "48840807b62dad80",
   "name" : "Search for a product and select last third result",
   "time" : {
-    "start" : 1734678456288,
-    "stop" : 1734678458637,
-    "duration" : 2349
+    "start" : 1734678576692,
+    "stop" : 1734678578658,
+    "duration" : 1966
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a88b6214de5167bf",
+  "uid" : "7026557ed1e55d68",
   "name" : "Invalid Login",
   "time" : {
-    "start" : 1734678454447,
-    "stop" : 1734678456283,
-    "duration" : 1836
+    "start" : 1734678575433,
+    "stop" : 1734678576687,
+    "duration" : 1254
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed3c317f7f61d232",
+  "name" : "Login",
+  "time" : {
+    "start" : 1734678573210,
+    "stop" : 1734678575423,
+    "duration" : 2213
   },
   "status" : "passed",
   "severity" : "normal"
