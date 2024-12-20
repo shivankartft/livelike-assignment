@@ -1,0 +1,3 @@
+2024-12-20 07:15:55 [INFO]: Starting test: Search for a product and select last third result
+2024-12-20 07:15:56 [INFO]: Successfully navigated to products page
+2024-12-20 07:15:57 [INFO]: Successfully search for shirt
