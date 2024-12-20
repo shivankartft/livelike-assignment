@@ -46,7 +46,6 @@ jobs:
 
       - name: Upload Allure Report to GitHub Pages
         run: |
-          mkdir -p gh-pages
           mkdir -p gh-pages/build-${{ github.run_number }}
           cp -r allure-report/* gh-pages/build-${{ github.run_number }}
           # cd gh-pages
