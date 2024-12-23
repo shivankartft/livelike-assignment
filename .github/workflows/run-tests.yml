@@ -46,23 +46,16 @@ jobs:
 
       - name: Upload Allure Report to GitHub Pages
         run: |
-          mkdir -p gh-pages/build-${{ github.run_number }}
-          cp -r allure-report/* gh-pages/build-${{ github.run_number }}
-          # cd gh-pages
-          # git init
-          # git checkout -b gh-pages
-          # git config user.name "${{ github.actor }}"
-          # git config user.email "${{ github.actor }}@tftus.com"
-          # git add .
-          # git commit -m "Update Allure Report"
-          # git push --force "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
-          
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.PAT }}
-          publish_dir: gh-pages
-          keep_files: true
+          mkdir -p gh-pages/reports/build-${{ github.run_number }}
+          cp -r allure-report/* gh-pages/reports/build-${{ github.run_number }}
+          cd gh-pages
+          git init
+          git checkout -b gh-pages
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@tftus.com"
+          git add .
+          git commit -m "Update Allure Report"
+          git push --force "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
 
       - name: Send Email via Gmail
         uses: dawidd6/action-send-mail@v3
