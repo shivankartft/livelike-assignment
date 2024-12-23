@@ -44,23 +44,15 @@ jobs:
           name: allure-report
           path: allure-report/
 
-      
-      - name: List Files for Debugging
-        run: ls -l
-
-      - name: Run Update Script
-        run: node updateIndex.js
-        continue-on-error: true
-
       - name: Upload Allure Report to GitHub Pages
         run: |
           mkdir -p gh-pages/reports/build-${{ github.run_number }}
           cp -r allure-report/* gh-pages/reports/build-${{ github.run_number }}
           ls -l
-          node reports.js
           cd gh-pages
           git init
           git checkout -b gh-pages
+          node reports.js
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@tftus.com"
           git add .
