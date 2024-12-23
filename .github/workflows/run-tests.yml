@@ -49,6 +49,7 @@ jobs:
           mkdir -p gh-pages/reports/build-${{ github.run_number }}
           cp -r allure-report/* gh-pages/reports/build-${{ github.run_number }}
           cd gh-pages
+          node reports.js
           git init
           git checkout -b gh-pages
           git config user.name "${{ github.actor }}"
