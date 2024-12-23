@@ -50,7 +50,7 @@ jobs:
           cp -r allure-report/* gh-pages/reports/build-${{ github.run_number }}
           cd gh-pages
           git init
-          git checkout gh-pages
+          git checkout -b gh-pages
           ls -l
           git checkout main -- updateIndex.js
           ls -l
