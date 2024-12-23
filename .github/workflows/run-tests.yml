@@ -52,7 +52,9 @@ jobs:
           git init
           git checkout gh-pages
           ls -l
-          node reports.js
+          git checkout main -- updateIndex.js
+          ls -l
+          node updateIndex.js
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@tftus.com"
           git add .
