@@ -53,6 +53,7 @@ jobs:
           ls -l
           git init
           git checkout -b gh-pages
+          echo "Generating index.html"
           node updateIndex.js
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@tftus.com"
