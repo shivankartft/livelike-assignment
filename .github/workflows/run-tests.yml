@@ -50,7 +50,7 @@ jobs:
           cp -r allure-report/* gh-pages/reports/build-${{ github.run_number }}
           cd gh-pages
           git init
-          git checkout -b gh-pages
+          git checkout gh-pages
           ls -l
           node reports.js
           git config user.name "${{ github.actor }}"
