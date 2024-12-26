@@ -48,4 +48,37 @@ jobs:
           mkdir -p gh-pages/reports
 
       - name: Compile and Run TypeScript Script
-   
+        run: |
+          yarn add -D typescript @types/node
+          npx tsc generate-index.ts
+          node generate-index.js
+
+      - name: Publish Allure Report to GitHub Pages
+        run: |
+          # Copy Allure report to gh-pages/reports
+          mkdir -p gh-pages/reports/build-${{ github.run_number }}
+          cp -r allure-report/* gh-pages/reports/build-${{ github.run_number }}
+          
+          # Commit and push changes
+          cd gh-pages
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add .
+          git commit -m "Update Allure Report for Build #${{ github.run_number }}"
+          git push --force "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages
+
+      - name: Send Email Notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: bansal.shivankar@tftus.com
+          password: ${{ secrets.GMAIL_PASSWORD }}
+          subject: "GitHub Actions: Build Notification"
+          to: bansal1995aug@gmail.com
+          from: no-reply@gmail.com
+          body: |
+            Hi,
+            
+            The Allure report for Build #${{ github.run_number }} is available at:
+            https://shivankartft.github.io/livelike-assignment/reports/build-${{ github.run_number }}/index.html
