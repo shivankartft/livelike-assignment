@@ -1,8 +1,8 @@
 name: allureHistoryWithStaticPage
 
 on:
-  workflow_dispatch:  
-  push:               
+  workflow_dispatch:
+  push:
     branches:
       - master
 
@@ -42,19 +42,18 @@ jobs:
           name: allure-report
           path: allure-report/
 
+      - name: Compile and Run TypeScript Script
+        run: |
+          yarn add -D typescript @types/node
+          npx tsc generate-index.ts
+          node generate-index.js
+
       - name: Publish Allure Report to GitHub Pages
         run: |
           # Clone gh-pages branch
           git clone --branch=gh-pages "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages
           mkdir -p gh-pages/reports/build-${{ github.run_number }}
           cp -r allure-report/* gh-pages/reports/build-${{ github.run_number }}
-          
-          # Update index.html dynamically
-          echo "<html><body><h1>Allure Reports</h1><ul>" > gh-pages/index.html
-          for dir in $(ls gh-pages/reports); do
-            echo "<li><a href='./reports/$dir'>Build $dir</a></li>" >> gh-pages/index.html
-          done
-          echo "</ul></body></html>" >> gh-pages/index.html
           
           # Commit and push changes
           cd gh-pages
