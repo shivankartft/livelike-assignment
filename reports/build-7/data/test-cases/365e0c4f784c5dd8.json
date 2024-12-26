@@ -1,0 +1,556 @@
+{
+  "uid" : "365e0c4f784c5dd8",
+  "name" : "Contact us form filling",
+  "fullName" : "form.spec.ts:5:7",
+  "historyId" : "f814b6e99badc4f4fc36345733a60a25:d41d8cd98f00b204e9800998ecf8427e",
+  "time" : {
+    "start" : 1735219903140,
+    "stop" : 1735219905521,
+    "duration" : 2381
+  },
+  "status" : "failed",
+  "statusMessage" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 42974, Symbol(trigger_async_id_symbol): 38449, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1735219905122}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1735219905124}], \"title\": \"Verify success message\", \"wallTime\": 1735219905121}, \"previous\": undefined, \"type\": \"stepZone\"}}",
+  "statusTrace" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 42974, Symbol(trigger_async_id_symbol): 38449, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1735219905122}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1735219905124}], \"title\": \"Verify success message\", \"wallTime\": 1735219905121}, \"previous\": undefined, \"type\": \"stepZone\"}}\n    at /home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts:80:49\n    at ContactUsPage.verifySuccessMessage (/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts:79:16)\n    at /home/runner/work/livelike-assignment/livelike-assignment/src/tests/form.spec.ts:15:30",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 42974, Symbol(trigger_async_id_symbol): 38449, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1735219905122}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1735219905124}], \"title\": \"Verify success message\", \"wallTime\": 1735219905121}, \"previous\": undefined, \"type\": \"stepZone\"}}",
+    "statusTrace" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 42974, Symbol(trigger_async_id_symbol): 38449, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1735219905122}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1735219905124}], \"title\": \"Verify success message\", \"wallTime\": 1735219905121}, \"previous\": undefined, \"type\": \"stepZone\"}}\n    at /home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts:80:49\n    at ContactUsPage.verifySuccessMessage (/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts:79:16)\n    at /home/runner/work/livelike-assignment/livelike-assignment/src/tests/form.spec.ts:15:30",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1735219903140,
+        "stop" : 1735219903311,
+        "duration" : 171
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture: logger",
+        "time" : {
+          "start" : 1735219903148,
+          "stop" : 1735219903154,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "fixture: page",
+        "time" : {
+          "start" : 1735219903154,
+          "stop" : 1735219903311,
+          "duration" : 157
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "browserType.launch",
+          "time" : {
+            "start" : 1735219903155,
+            "stop" : 1735219903260,
+            "duration" : 105
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "browser.newContext",
+          "time" : {
+            "start" : 1735219903261,
+            "stop" : 1735219903267,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "browserContext.newPage",
+          "time" : {
+            "start" : 1735219903273,
+            "stop" : 1735219903308,
+            "duration" : 35
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 3,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click on contact us page link",
+      "time" : {
+        "start" : 1735219903311,
+        "stop" : 1735219904535,
+        "duration" : 1224
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "page.goto(/)",
+        "time" : {
+          "start" : 1735219903313,
+          "stop" : 1735219904306,
+          "duration" : 993
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.click(a[href=\"/contact_us\"])",
+        "time" : {
+          "start" : 1735219904307,
+          "stop" : 1735219904535,
+          "duration" : 228
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Fill contact us form",
+      "time" : {
+        "start" : 1735219904535,
+        "stop" : 1735219904966,
+        "duration" : 431
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.waitFor(#contact-us-form input[name=\"name\"])",
+        "time" : {
+          "start" : 1735219904537,
+          "stop" : 1735219904648,
+          "duration" : 111
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.fill(#contact-us-form input[name=\"name\"])",
+        "time" : {
+          "start" : 1735219904649,
+          "stop" : 1735219904701,
+          "duration" : 52
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.fill(#contact-us-form input[type=\"email\"])",
+        "time" : {
+          "start" : 1735219904702,
+          "stop" : 1735219904805,
+          "duration" : 103
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.fill(#contact-us-form input[name=\"subject\"])",
+        "time" : {
+          "start" : 1735219904805,
+          "stop" : 1735219904837,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.fill(#message)",
+        "time" : {
+          "start" : 1735219904838,
+          "stop" : 1735219904900,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.setInputFiles(input[type=\"file\"])",
+        "time" : {
+          "start" : 1735219904901,
+          "stop" : 1735219904966,
+          "duration" : 65
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "locator.click(input[type=\"submit\"])",
+      "time" : {
+        "start" : 1735219904967,
+        "stop" : 1735219905120,
+        "duration" : 153
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Verify success message",
+      "time" : {
+        "start" : 1735219905121,
+        "stop" : 1735219905519,
+        "duration" : 398
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.textContent(.contact-form .alert-success)",
+        "time" : {
+          "start" : 1735219905122,
+          "stop" : 1735219905129,
+          "duration" : 7
+        },
+        "status" : "failed",
+        "statusMessage" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 42974, Symbol(trigger_async_id_symbol): 38449, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1735219905122}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1735219905124}], \"title\": \"Verify success message\", \"wallTime\": 1735219905121}, \"previous\": undefined, \"type\": \"stepZone\"}}",
+        "statusTrace" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 42974, Symbol(trigger_async_id_symbol): 38449, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1735219905122}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1735219905124}], \"title\": \"Verify success message\", \"wallTime\": 1735219905121}, \"previous\": undefined, \"type\": \"stepZone\"}}\n    at /home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts:80:49\n    at ContactUsPage.verifySuccessMessage (/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts:79:16)\n    at /home/runner/work/livelike-assignment/livelike-assignment/src/tests/form.spec.ts:15:30",
+        "steps" : [ {
+          "name" : "expect.toBe",
+          "time" : {
+            "start" : 1735219905124,
+            "stop" : 1735219905128,
+            "duration" : 4
+          },
+          "status" : "failed",
+          "statusMessage" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 42974, Symbol(trigger_async_id_symbol): 38449, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1735219905122}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1735219905124}], \"title\": \"Verify success message\", \"wallTime\": 1735219905121}, \"previous\": undefined, \"type\": \"stepZone\"}}",
+          "statusTrace" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 42974, Symbol(trigger_async_id_symbol): 38449, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1735219905122}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1735219905124}], \"title\": \"Verify success message\", \"wallTime\": 1735219905121}, \"previous\": undefined, \"type\": \"stepZone\"}}\n    at /home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts:80:49\n    at ContactUsPage.verifySuccessMessage (/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts:79:16)\n    at /home/runner/work/livelike-assignment/livelike-assignment/src/tests/form.spec.ts:15:30",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "After Hooks",
+        "time" : {
+          "start" : 1735219905129,
+          "stop" : 1735219905525,
+          "duration" : 396
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "fixture: page",
+          "time" : {
+            "start" : 1735219905130,
+            "stop" : 1735219905254,
+            "duration" : 124
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "page.screenshot",
+            "time" : {
+              "start" : 1735219905131,
+              "stop" : 1735219905175,
+              "duration" : 44
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "browserContext.close",
+          "time" : {
+            "start" : 1735219905484,
+            "stop" : 1735219905494,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "browser.close",
+          "time" : {
+            "start" : 1735219905495,
+            "stop" : 1735219905526,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Screenshot",
+          "time" : {
+            "start" : 1735219905790,
+            "stop" : 1735219905790,
+            "duration" : 0
+          },
+          "status" : "unknown",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "951f2ae03fde21b6",
+            "name" : "Screenshot",
+            "source" : "951f2ae03fde21b6.png",
+            "type" : "image/png",
+            "size" : 69729
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "logs/form.spec.log",
+          "time" : {
+            "start" : 1735219905791,
+            "stop" : 1735219905791,
+            "duration" : 0
+          },
+          "status" : "unknown",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "b9134761c1d448b1",
+            "name" : "logs/form.spec.log",
+            "source" : "b9134761c1d448b1.txt",
+            "type" : "text/plain",
+            "size" : 352
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 6,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "fixture: logger",
+        "time" : {
+          "start" : 1735219905526,
+          "stop" : 1735219905526,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 10,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Worker Cleanup",
+      "time" : {
+        "start" : 1735219905527,
+        "stop" : 1735219905528,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "trace",
+      "time" : {
+        "start" : 1735219905791,
+        "stop" : 1735219905791,
+        "duration" : 0
+      },
+      "status" : "unknown",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "572bc1d3feccca9",
+        "name" : "trace",
+        "source" : "572bc1d3feccca9.zip",
+        "type" : "application/zip",
+        "size" : 4956111
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "ab228eb1ead375a9",
+      "name" : "stdout",
+      "source" : "ab228eb1ead375a9.txt",
+      "type" : "text/plain",
+      "size" : 352
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 30,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "framework",
+    "value" : "playwright"
+  }, {
+    "name" : "package",
+    "value" : "form.spec.ts"
+  }, {
+    "name" : "titlePath",
+    "value" : " >  > form.spec.ts > Contact us form filling"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1696-252"
+  }, {
+    "name" : "thread",
+    "value" : "pid-3371-worker-0"
+  }, {
+    "name" : "suite",
+    "value" : "form.spec.ts"
+  }, {
+    "name" : "subSuite",
+    "value" : "Contact us form filling"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "365e0c4f784c5dd8.json",
+  "parameterValues" : [ ]
+}

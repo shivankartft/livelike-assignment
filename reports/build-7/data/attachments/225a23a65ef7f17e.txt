@@ -1,0 +1,5 @@
+2024-12-26 13:31:46 [INFO]: Starting test: Login
+2024-12-26 13:31:47 [INFO]: Successfully navigated to login page
+2024-12-26 13:31:47 [INFO]: Successfully entered user details and clicked on submit button
+2024-12-26 13:31:47 [INFO]: Successfully logged in
+2024-12-26 13:31:47 [INFO]: Test "Login" passed.
