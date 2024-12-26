@@ -21,8 +21,8 @@ var templateContent = fs.readFileSync(templateFile, 'utf-8');
 var reports = fs.readdirSync(reportsDir).filter(function (file) {
     return fs.statSync(path.join(reportsDir, file)).isDirectory();
 });
-// Generate the list items dynamically
-var listItems = reports.map(function (dir) { return "<li><a href=\"./reports/".concat(dir, "\">Build ").concat(dir, "</a></li>"); }).join('\n');
+// Generate the list items dynamically with target="_blank"
+var listItems = reports.map(function (dir) { return "<li><a href=\"./reports/".concat(dir, "\" target=\"_blank\">Build ").concat(dir, "</a></li>"); }).join('\n');
 // Replace the placeholder with the generated list items
 var finalHtmlContent = templateContent.replace('<!-- INSERT REPORT LINKS HERE -->', listItems);
 // Write the updated content to the output file
