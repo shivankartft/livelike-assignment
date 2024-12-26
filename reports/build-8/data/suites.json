@@ -1,0 +1,97 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "form.spec.ts",
+    "children" : [ {
+      "name" : "Contact us form filling",
+      "children" : [ {
+        "name" : "Contact us form filling",
+        "uid" : "985cf721250ac07",
+        "parentUid" : "baaa7da599b6e22151865d9588a7b106",
+        "status" : "failed",
+        "time" : {
+          "start" : 1735220134131,
+          "stop" : 1735220136606,
+          "duration" : 2475
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "baaa7da599b6e22151865d9588a7b106"
+    } ],
+    "uid" : "5f0737f1d0d8045c2137745ab391c122"
+  }, {
+    "name" : "login.spec.ts",
+    "children" : [ {
+      "name" : "Login",
+      "children" : [ {
+        "name" : "Login",
+        "uid" : "9036f496cf4fb47f",
+        "parentUid" : "c521efed5c43b85810d26991e3eff68d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1735220137361,
+          "stop" : 1735220140066,
+          "duration" : 2705
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid Login",
+        "uid" : "cadb0c33ecba1fbc",
+        "parentUid" : "c521efed5c43b85810d26991e3eff68d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1735220140076,
+          "stop" : 1735220141413,
+          "duration" : 1337
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c521efed5c43b85810d26991e3eff68d"
+    } ],
+    "uid" : "85533cf51922ba29d5c511adcf54b49b"
+  }, {
+    "name" : "search.spec.ts",
+    "children" : [ {
+      "name" : "Search for a product and select last third result",
+      "children" : [ {
+        "name" : "Search for a product and select last third result",
+        "uid" : "1da13599454c5277",
+        "parentUid" : "d30635b1fa4128092f4c17d04deac5fc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1735220141418,
+          "stop" : 1735220143497,
+          "duration" : 2079
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d30635b1fa4128092f4c17d04deac5fc"
+    } ],
+    "uid" : "7157f609de590132103a92a9a2d567e7"
+  } ]
+}
