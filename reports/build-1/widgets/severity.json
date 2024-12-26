@@ -1,0 +1,41 @@
+[ {
+  "uid" : "ffc7192092305ad7",
+  "name" : "Invalid Login",
+  "time" : {
+    "start" : 1735217955888,
+    "stop" : 1735217958587,
+    "duration" : 2699
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8599d8137776a200",
+  "name" : "Search for a product and select last third result",
+  "time" : {
+    "start" : 1735217958594,
+    "stop" : 1735217961827,
+    "duration" : 3233
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f050f45532c6caad",
+  "name" : "Login",
+  "time" : {
+    "start" : 1735217953664,
+    "stop" : 1735217955874,
+    "duration" : 2210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9a68e896d72256d",
+  "name" : "Contact us form filling",
+  "time" : {
+    "start" : 1735217950442,
+    "stop" : 1735217952890,
+    "duration" : 2448
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

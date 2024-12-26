@@ -1,0 +1,5 @@
+2024-12-26 12:59:16 [INFO]: Starting test: Invalid Login
+2024-12-26 12:59:17 [INFO]: Successfully navigated to login page
+2024-12-26 12:59:18 [INFO]: Successfully entered user details and clicked on submit button
+2024-12-26 12:59:18 [INFO]: Successfully verified invalid login
+2024-12-26 12:59:18 [INFO]: Test "Invalid Login" passed.
