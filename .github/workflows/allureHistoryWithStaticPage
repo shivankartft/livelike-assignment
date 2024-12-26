@@ -1,0 +1,81 @@
+name: Run Tests
+
+on:
+  workflow_dispatch:  
+  push:               
+    branches:
+      - master
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: |
+          yarn install
+          yarn playwright install chromium
+
+      - name: Install Allure Command-Line Tool
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-11-jre
+          wget -q https://github.com/allure-framework/allure2/releases/download/2.17.3/allure-2.17.3.tgz
+          tar -xzf allure-2.17.3.tgz
+          sudo mv allure-2.17.3 /opt/allure
+          echo 'export PATH=$PATH:/opt/allure/bin' >> $GITHUB_ENV
+          echo "/opt/allure/bin" >> $GITHUB_PATH
+
+      - name: Run Tests
+        run: yarn run test
+        continue-on-error: true
+
+      - name: Generate Allure Report
+        run: allure generate allure-results --clean -o allure-report
+
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure-report
+          path: allure-report/
+
+      - name: Publish Allure Report to GitHub Pages
+        run: |
+          # Clone gh-pages branch
+          git clone --branch=gh-pages "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages
+          mkdir -p gh-pages/reports/build-${{ github.run_number }}
+          cp -r allure-report/* gh-pages/reports/build-${{ github.run_number }}
+          
+          # Update index.html dynamically
+          echo "<html><body><h1>Allure Reports</h1><ul>" > gh-pages/index.html
+          for dir in $(ls gh-pages/reports); do
+            echo "<li><a href='./reports/$dir'>Build $dir</a></li>" >> gh-pages/index.html
+          done
+          echo "</ul></body></html>" >> gh-pages/index.html
+          
+          # Commit and push changes
+          cd gh-pages
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add .
+          git commit -m "Update Allure Report for Build #${{ github.run_number }}"
+          git push --force "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" gh-pages
+
+      - name: Send Email Notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: bansal.shivankar@tftus.com
+          password: ${{ secrets.GMAIL_PASSWORD }}
+          subject: "GitHub Actions: Build Notification"
+          to: bansal1995aug@gmail.com
+          from: no-reply@gmail.com
+          body: |
+            Hi,
+            
+            The Allure report for Build #${{ github.run_number }} is available at:
+            https://shivankartft.github.io/livelike-assignment/reports/build-${{ github.run_number }}/index.html
