@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Dec 26 13:55:12 UTC 2024","Thu Dec 26 13:55:14 UTC 2024","2293","","login.spec.ts","Login","","","Login",""
+"failed","Thu Dec 26 13:55:08 UTC 2024","Thu Dec 26 13:55:11 UTC 2024","3186","","form.spec.ts","Contact us form filling","","","Contact us form filling",""
+"passed","Thu Dec 26 13:55:14 UTC 2024","Thu Dec 26 13:55:17 UTC 2024","2402","","login.spec.ts","Login","","","Invalid Login",""
+"passed","Thu Dec 26 13:55:17 UTC 2024","Thu Dec 26 13:55:19 UTC 2024","2552","","search.spec.ts","Search for a product and select last third result","","","Search for a product and select last third result",""
