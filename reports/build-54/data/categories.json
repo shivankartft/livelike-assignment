@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 43274, Symbol(trigger_async_id_symbol): 39335, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1735217592033}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1735217592035}], \"title\": \"Verify success message\", \"wallTime\": 1735217592032}, \"previous\": undefined, \"type\": \"stepZone\"}}",
+      "children" : [ {
+        "name" : "Contact us form filling",
+        "uid" : "9d714c292c80034b",
+        "parentUid" : "1fabc458f2204e2678a247db7df4bb6a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1735217590134,
+          "stop" : 1735217592466,
+          "duration" : 2332
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1fabc458f2204e2678a247db7df4bb6a"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
