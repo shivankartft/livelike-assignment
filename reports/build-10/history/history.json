@@ -1,0 +1,79 @@
+{
+  "f814b6e99badc4f4fc36345733a60a25:d41d8cd98f00b204e9800998ecf8427e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a3e63d5230c66a75",
+      "status" : "failed",
+      "statusDetails" : "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Success! Your details have been submitted successfully.\"\nReceived: {Symbol(async_id_symbol): 44311, Symbol(trigger_async_id_symbol): 40273, Symbol(kResourceStore): {\"data\": {\"box\": undefined, \"boxedStack\": undefined, \"category\": \"test.step\", \"complete\": [Function complete], \"location\": {\"column\": 16, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": \"ContactUsPage.verifySuccessMessage\", \"line\": 79}, \"stepId\": \"test.step@18\", \"steps\": [{\"apiName\": \"locator.textContent\", \"boxedStack\": undefined, \"category\": \"pw:api\", \"complete\": [Function complete], \"location\": {\"column\": 34, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"selector\": \".contact-form .alert-success\", \"strict\": true}, \"stepId\": \"pw:api@19\", \"steps\": [], \"title\": \"locator.textContent(.contact-form .alert-success)\", \"wallTime\": 1735220896063}, {\"boxedStack\": undefined, \"category\": \"expect\", \"complete\": [Function complete], \"infectParentStepsWithError\": undefined, \"location\": {\"column\": 49, \"file\": \"/home/runner/work/livelike-assignment/livelike-assignment/src/pages/ContactUsPage.ts\", \"function\": undefined, \"line\": 80}, \"params\": {\"expected\": \"Success! Your details have been submitted successfully.\"}, \"stepId\": \"expect@20\", \"steps\": [], \"title\": \"expect.toBe\", \"wallTime\": 1735220896066}], \"title\": \"Verify success message\", \"wallTime\": 1735220896061}, \"previous\": undefined, \"type\": \"stepZone\"}}",
+      "time" : {
+        "start" : 1735220893631,
+        "stop" : 1735220896532,
+        "duration" : 2901
+      }
+    } ]
+  },
+  "9b45d67e2f789361dad8fc08374ca172:d41d8cd98f00b204e9800998ecf8427e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "71d28ad1a3cb76fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1735220901246,
+        "stop" : 1735220903947,
+        "duration" : 2701
+      }
+    } ]
+  },
+  "c536e8f84a74a6d97ba9a5ba86b98a6a:d41d8cd98f00b204e9800998ecf8427e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6fea6980d7145544",
+      "status" : "passed",
+      "time" : {
+        "start" : 1735220897318,
+        "stop" : 1735220899627,
+        "duration" : 2309
+      }
+    } ]
+  },
+  "a9a7008cc9f18fe8d4d477907598c470:d41d8cd98f00b204e9800998ecf8427e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d2ed9d58de365f3e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1735220899638,
+        "stop" : 1735220901240,
+        "duration" : 1602
+      }
+    } ]
+  }
+}

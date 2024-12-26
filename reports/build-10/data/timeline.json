@@ -1,0 +1,81 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "fv-az1314-353",
+    "children" : [ {
+      "name" : "pid-3404-worker-0",
+      "children" : [ {
+        "name" : "Contact us form filling",
+        "uid" : "a3e63d5230c66a75",
+        "parentUid" : "a6e11ec44a768084d6f6f4f86a8360f0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1735220893631,
+          "stop" : 1735220896532,
+          "duration" : 2901
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Search for a product and select last third result",
+        "uid" : "71d28ad1a3cb76fe",
+        "parentUid" : "a6e11ec44a768084d6f6f4f86a8360f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1735220901246,
+          "stop" : 1735220903947,
+          "duration" : 2701
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login",
+        "uid" : "6fea6980d7145544",
+        "parentUid" : "a6e11ec44a768084d6f6f4f86a8360f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1735220897318,
+          "stop" : 1735220899627,
+          "duration" : 2309
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid Login",
+        "uid" : "d2ed9d58de365f3e",
+        "parentUid" : "a6e11ec44a768084d6f6f4f86a8360f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1735220899638,
+          "stop" : 1735220901240,
+          "duration" : 1602
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a6e11ec44a768084d6f6f4f86a8360f0"
+    } ],
+    "uid" : "81be9c8e6aa88a50e1d936a7f4784247"
+  } ]
+}
